@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS portfolio;
+USE portfolio;
+
+CREATE TABLE IF NOT EXISTS projects (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  description TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS education (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  level VARCHAR(50) NOT NULL,
+  institution VARCHAR(255) NOT NULL,
+  year_completed INT NOT NULL,
+  percentage FLOAT
+);
